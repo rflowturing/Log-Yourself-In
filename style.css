@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css?family=Acme|Baloo+Bhai|Righteous|Yanone+Kaffeesatz&display=swap');
+/* font-family: 'Yanone Kaffeesatz', sans-serif;
+font-family: 'Acme', sans-serif;
+font-family: 'Baloo Bhai', cursive;
+font-family: 'Righteous', cursive; */
+
+body {
+    width: 100%;
+    background-color: rgba(26, 22, 23, 0.829);
+}
+
+.signinup {
+    margin-top: 24px;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px;
+    font-family: 'Acme', sans-serif;
+    color: white;
+    font-size: 4em;
+    text-shadow: 5px 5px black;
+    margin-top: 30px;
+}
+
+textarea:placeholder-shown {
+    color: black;
+}
+
+.up {
+    color: black;
+    font-size: 2em;
+    text-shadow: 2px 2px white;
+}
+
+.error {
+    color: red;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.good {
+    color: green;
+    margin-top: 30px;
+}
+
+.contReg {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.contentprofil {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid black;
+    margin-top: 50px;
+    box-shadow: 5px 5px 5px black;
+    background-color: rgba(54, 4, 28, 0.87);
+}
+
+.btnreg {
+    width: 20%;
+}
+
+.signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid black;
+    margin-top: 50px;
+    box-shadow: 5px 5px 5px black;
+    background-color: rgba(54, 4, 28, 0.87);
+}
+
+.but {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+.bitchplease {
+    display: flex;
+    justify-content: end;
+}
+
+.asshole {
+    margin: 42px 0px 0px 10px;
+    width: 121px;
+    height: 41px;
+}
+
+button {
+    color: black !important;
+    background-color: grey !important;
+    border: 3px solid black !important;
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 1.3em !important;
+    margin-bottom: 7%;
+}
+
+button:hover {
+    background-color: black !important;
+    color: grey !important;
+    border: 3px solid grey !important;
+}
+
+.button-profil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black !important;
+    background-color: grey !important;
+    border: 3px solid black !important;
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 1.3em !important;
+    width: 120px;
+    margin-left: 20px;
+
+}
+
+.disconect {
+    margin-right: 44px;
+}
+
+.btn {
+    margin-bottom: 0px !important;
+}
+
+.button-profil:hover {
+    background-color: black !important;
+    color: grey !important;
+    border: 3px solid grey !important;
+    text-decoration: none;
+}
+
+.button-content {
+    display: flex;
+    justify-content: end;
+}
+
+.delete {
+    margin-left: 79px;
+    width: 91px;
+    display: inline-block;
+    text-align: center;
+}
+
+.bottom {
+    margin-top: 45px;
+    margin-bottom: 45px;
+    display: flex;
+    justify-content: end;
+}
+
+label {
+    color: white;
+    font-weight: 200;
+    font-size: 1.5em;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+.label {
+    color: white;
+    font-weight: 200;
+    font-size: 1.5em;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+.labeldesc {
+    text-align: end !important;
+    display: grid;
+}
+
+.form-control:focus {
+    background-color: rgb(0, 0, 0);
+    border: 2px solid white;
+}
+
+.form-control {
+    background-color: rgb(0, 0, 0);
+    border: 2px solid white;
+    color: white !important;
+    font-size: 1em;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.637) !important;
+    font-size: 1em;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+.missing-info {
+    text-align: center;
+}
+
+.profinfo {
+    color: white;
+    height: 36px;
+    font-size: 1.5em;
+    font-family: 'Baloo Bhai', cursive;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid white;
+    color: white !important;
+    margin-bottom: 1rem;
+}
+
+.button-update {
+    color: black !important;
+    background-color: grey !important;
+    border: 3px solid black !important;
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 1.3em !important;
+    width: 150px;
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button-update:hover {
+    background-color: black !important;
+    color: grey !important;
+    border: 3px solid grey !important;
+}
+
+
+.modal-content {
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 1.2em;
+
+}
+
+h5 {
+    font-size: 1.4em;
+    ;
+}
+
+.close {
+    border: none !important;
+}
+
+.modal-header {
+    background-color: grey;
+
+}
+
+.modal-body {
+    background-color: rgba(128, 128, 128, 0.589);
+}
+
+.modal-footer {
+    background-color: grey;
+    ;
+}
