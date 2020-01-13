@@ -4,9 +4,9 @@
         $pw = $_POST['password'];
         if (isset($_POST['submitin'])) {
             $dbhost = "remotemysql.com";
-            $dbuser = "DGynRSEipT";
-            $dbpass = "WezFIBGzuR";
-            $db = "DGynRSEipT";
+            $dbuser = "GDwG96muIP";
+            $dbpass = "27HXEaCr65";
+            $db = "GDwG96muIP";
             if (!empty($username) and !empty($pw)) {
                 $pdo = new PDO("mysql:host=$dbhost;dbname=$db", $dbuser, $dbpass);
                 $connectmbr = $pdo->prepare("SELECT * FROM Student WHERE username = ? AND password = ?");

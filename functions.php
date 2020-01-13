@@ -8,9 +8,9 @@ $passwordval = $_POST['passwordval'];
 if (isset($_POST['submit'])) {
 
     $dbhost = "remotemysql.com";
-    $dbuser = "DGynRSEipT";
-    $dbpass = "WezFIBGzuR";
-    $db = "DGynRSEipT";
+    $dbuser = "GDwG96muIP";
+    $dbpass = "27HXEaCr65";
+    $db = "GDwG96muIP";
 
     if (!empty($username) and !empty($mail) and !empty($pw)) {
         $pdo = new PDO("mysql:host=$dbhost;dbname=$db", $dbuser, $dbpass);

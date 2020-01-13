@@ -5,9 +5,9 @@
 // {
 // Try to figure out what these should be for you
 $dbhost = "remotemysql.com";
-$dbuser = "DGynRSEipT";
-$dbpass = "WezFIBGzuR";
-$db = "DGynRSEipT";
+$dbuser = "GDwG96muIP";
+$dbpass = "27HXEaCr65";
+$db = "GDwG96muIP";
 
 try {
     // Try to understand what happens here
