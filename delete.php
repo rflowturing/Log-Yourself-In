@@ -2,9 +2,9 @@
 
 session_start();
 $dbhost = "remotemysql.com";
-$dbuser = " GDwG96muIP";
-$dbpass = " 27HXEaCr65";
-$db = " GDwG96muIP";
+$dbuser = "GDwG96muIP";
+$dbpass = "27HXEaCr65";
+$db = "GDwG96muIP";
 
 $pdo = new PDO("mysql:host=$dbhost;dbname=$db", $dbuser, $dbpass);
 $getid = $_GET['id'];

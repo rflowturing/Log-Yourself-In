@@ -103,7 +103,7 @@ if (isset($_POST['submitin'])) {
     <div class="signinup container">
         <div class="col-12">
             <form method="post" action="signup.php" name="formulaire">
-                <div class="bitchplease row">
+                <div class="signinrow row">
                     <div class="col-3">
                         <div class="form-group">
                             <label for="usernameconnect">Username</label>
