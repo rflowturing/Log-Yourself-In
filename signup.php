@@ -1,9 +1,9 @@
 <?php
 session_start();
 $dbhost = "remotemysql.com";
-$dbuser = "DGynRSEipT";
-$dbpass = "WezFIBGzuR";
-$db = "DGynRSEipT";
+$dbuser = "GDwG96muIP";
+$dbpass = "27HXEaCr65";
+$db = "GDwG96muIP";
 $pdo = new PDO("mysql:host=$dbhost;dbname=$db", $dbuser, $dbpass);
 $getid = intval($_GET['id']);
 $requser = $pdo->prepare('SELECT * FROM Student WHERE id = ?');
