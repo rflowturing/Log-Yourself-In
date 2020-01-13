@@ -51,7 +51,7 @@ if (isset($_GET['id']) and $_GET['id'] > 0) {
                             <input class="profinfo" value="<?php echo $userinfo['first_name']; ?>">
                             <input class="profinfo" value="<?php echo $userinfo['last_name']; ?>">
                             <input class="profinfo" value="<?php echo $userinfo['username']; ?>">
-                            <input class="profinfo" value="<?php echo $userinfo['email']; ?>">
+                            <input class="profinfo" value="<?php echo $userinfo['mail']; ?>">
                             <input class="profinfo" value="<?php echo $userinfo['linkedin']; ?>">
                             <input class="profinfo" value="<?php echo $userinfo['github']; ?>">
                         </div>

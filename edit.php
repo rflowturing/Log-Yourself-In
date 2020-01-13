@@ -38,9 +38,9 @@ if (isset($_SESSION['id'])) {
                 $insertlast_name->execute(array($newlast_name, $_SESSION['id']));
                 header('Location: profil.php?id=' . $_SESSION['id']);
             }
-            if (isset($_POST['newmail']) and !empty($_POST['newmail']) and $_POST['newmail'] != $user['email']) {
+            if (isset($_POST['newmail']) and !empty($_POST['newmail']) and $_POST['newmail'] != $user['mail']) {
                 $newmail = htmlspecialchars($_POST['newmail']);
-                $insertmail = $pdo->prepare("UPDATE Student SET email = ? WHERE id = ?");
+                $insertmail = $pdo->prepare("UPDATE Student SET mail = ? WHERE id = ?");
                 $insertmail->execute(array($newmail, $_SESSION['id']));
                 header('Location: profil.php?id=' . $_SESSION['id']);
             }
@@ -79,9 +79,9 @@ if (isset($_SESSION['id'])) {
             $insertlast_name->execute(array($newlast_name, $_SESSION['id']));
             header('Location: profil.php?id=' . $_SESSION['id']);
         }
-        if (isset($_POST['newmail']) and !empty($_POST['newmail']) and $_POST['newmail'] != $user['email']) {
+        if (isset($_POST['newmail']) and !empty($_POST['newmail']) and $_POST['newmail'] != $user['mail']) {
             $newmail = htmlspecialchars($_POST['newmail']);
-            $insertmail = $pdo->prepare("UPDATE Student SET email = ? WHERE id = ?");
+            $insertmail = $pdo->prepare("UPDATE Student SET mail = ? WHERE id = ?");
             $insertmail->execute(array($newmail, $_SESSION['id']));
             header('Location: profil.php?id=' . $_SESSION['id']);
         }
@@ -140,9 +140,9 @@ if (isset($_SESSION['id'])) {
                                 <input type="text" class="profinfo" name="newfirst_name" placeholder="First name" value="<?php echo $user['first_name']; ?>" />
                                 <input type="text" class="profinfo" name="newlast_name" placeholder="Last name" value="<?php echo $user['last_name']; ?>" />
                                 <input type="text" class="profinfo" name="newusername" placeholder="Username" value="<?php echo $user['username']; ?>" />
-                                <input type="text" class="profinfo" name="newmail" placeholder="Mail" value="<?php echo $user['email']; ?>" />
-                                <input type="text" class="profinfo" name="linkedin" placeholder="Linkedin" value="<?php echo $user['linkedin']; ?>">
-                                <input type="text" class="profinfo" name="github" placeholder="Github" value="<?php echo $user['github']; ?>">
+                                <input type="text" class="profinfo" name="newmail" placeholder="Mail" value="<?php echo $user['mail']; ?>" />
+                                <input type="text" class="profinfo" name="newlinkedin" placeholder="Linkedin" value="<?php echo $user['linkedin']; ?>">
+                                <input type="text" class="profinfo" name="newgithub" placeholder="Github" value="<?php echo $user['github']; ?>">
                                 <input type="password" class="profinfo" name="newpw" placeholder="Password" />
                                 <input type="password" class="profinfo" name="newpw2" placeholder="Password confirmation" />
                                 <div class="">

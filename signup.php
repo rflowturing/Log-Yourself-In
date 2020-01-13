@@ -4,11 +4,16 @@ $dbhost = "remotemysql.com";
 $dbuser = "GDwG96muIP";
 $dbpass = "27HXEaCr65";
 $db = "GDwG96muIP";
+
 $pdo = new PDO("mysql:host=$dbhost;dbname=$db", $dbuser, $dbpass);
-$getid = intval($_GET['id']);
-$requser = $pdo->prepare('SELECT * FROM Student WHERE id = ?');
-$requser->execute(array($getid));
-$userinfo = $requser->fetch();
+
+if(isset($_GET["id"]) && !empty($_GET["id"])){
+  $getid = intval($_GET['id']);
+  $requser = $pdo->prepare('SELECT * FROM Student WHERE id = ?');
+  $requser->execute(array($getid));
+  $userinfo = $requser->fetch();
+}
+
 
 if (isset($_POST['submit'])) {
 
@@ -28,12 +33,12 @@ if (isset($_POST['submit'])) {
                     $requsername = $pdo->prepare("SELECT * FROM Student WHERE username = ?");
                     $requsername->execute(array($username));
                     $usernameexist = $requsername->rowCount();
-                    $reqmail = $pdo->prepare("SELECT *FROM Student WHERE email = ?");
+                    $reqmail = $pdo->prepare("SELECT *FROM Student WHERE mail = ?");
                     $reqmail->execute(array($mail));
                     $mailexist = $reqmail->rowCount();
                     if ($mailexist == 0) {
                         if ($usernameexist == 0) {
-                            $insertmbr = $pdo->prepare("INSERT INTO Student (first_name,last_name,username, email, password,linkedin , github) VALUES( ?,?,?,?,?,?,?)");
+                            $insertmbr = $pdo->prepare("INSERT INTO Student (first_name,last_name,username, mail, password,linkedin , github) VALUES( ?,?,?,?,?,?,?)");
                             $insertmbr->execute(array($first_name, $last_name, $username, $mail, $pw, $linkedin, $github));
                             $good = "You have successfully created a new account! You can now Sign In :-) ";
                         } else {
@@ -116,7 +121,7 @@ if (isset($_POST['submitin'])) {
                         }
                         ?>
                     </div>
-                    <button type="submit" name="submitin" class="asshole btn btn-primary offset-4">Sign in</button>
+                    <button type="submit" name="submitin" class="submit btn btn-primary offset-4">Sign in</button>
                 </div>
             </form>
 
