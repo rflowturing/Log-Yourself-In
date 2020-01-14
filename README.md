@@ -5,16 +5,24 @@
 
 Description
 ----
-User account creation and edition connected to a MySQL database
+User account creation and edition connected to a MySQL database. Complete form validation. 
 
 Technologies
 ----
 *PHP*, *Docker*, *MySQL*
 
+What can you do?
+----
+* Create an account
+* Connect to your user space
+* Manage your user informations
+* Disconnect
+* Delete account
+
 Project demo 
 ----
 
-[Link to the project](https://sign-up-log-in.herokuapp.com/signup.php)
+[Link to the demo](https://sign-up-log-in.herokuapp.com/signup.php)
 
 Screenshots
 ----
