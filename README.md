@@ -9,7 +9,7 @@ User account creation and edition connected to a MySQL database. Complete form v
 
 Technologies
 ----
-*PHP*, *Docker*, *MySQL*
+*PHP*, *Docker*, *MySQL*, *HTML*, *CSS*
 
 What can you do?
 ----
